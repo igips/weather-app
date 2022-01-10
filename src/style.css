@@ -1,0 +1,70 @@
+html {
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+	background-image: url("img/background.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0px;
+	display: block;
+    margin-left: 60px;
+    margin-top: 100px;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+
+input {
+    border: none;
+    height: 50px;
+    padding: 0px;
+    padding-left: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: none;
+    color: white;
+    font-size: 30px;
+    border-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border: 0px;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 0.5rem;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+button:hover {
+    background-color: rgba(230, 230, 230, 0.2);
+}    
+
+button:active {
+    background-color: rgba(205, 205, 205, 0.2);
+}
+
+
+@media (max-width: 650px) {
+}
