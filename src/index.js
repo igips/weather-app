@@ -1,5 +1,10 @@
-import { getData } from "./modules/weatherData";
+import {  locationInput, searchButton } from "./getElements";
+import { getData, getLocationFromIp, } from "./modules/weatherData";
 import "./style.css";
 
+getLocationFromIp();
 
-getData();
+searchButton.addEventListener("click", () => {
+	getData(locationInput.value);
+	locationInput.value = "";
+});
