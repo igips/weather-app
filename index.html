@@ -7,28 +7,30 @@
 		<link rel="shortcut icon" type="image/x-icon" href="fav.png" />
 		<script src="bundle.js" defer></script>
 		<script src="https://kit.fontawesome.com/ec2997d163.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
 	</head>
+
 	<body>
 		<div id="search">
-			<button><i class="fas fa-search" style="height: 20px"></i></button>
-			<input type="text" placeholder="Location" />
-			
+			<button id="search-button"><i class="fas fa-search" style="height: 20px"></i></button>
+			<input id="loc-input" type="text" placeholder="Location" />
 		</div>
+
 		<div id="center">
 			<div>
-				<p id="city">Krakow</p>
-				<p id="date">Tuesday, 11th Jan '22, &nbsp; 3:11 pm</p>
-				<p id="weather">Overcast </p>
+				<p id="city"></p>
+				<p id="date"></p>
+				<p id="weather"></p>
+
+				<br />
+
+				<p id="degree">
+					<img id="weather-icon" src="" alt="" />
+					<span id="deg"></span>
+					<span id="deg-sym"></span>
+				</p>
 			</div>
-			
-			<br>
-	
-			<p id="degree"><img  src="http://openweathermap.org/img/wn/02d@2x.png" alt="">−3 <span id="deg-sym">°C</span></p>
-			
-			
-			
-			
-			
 		</div>
 	</body>
 </html>
