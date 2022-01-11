@@ -10,8 +10,14 @@ body {
 	background-repeat: no-repeat;
 	margin: 0px;
 	display: block;
-    margin-left: 60px;
+    margin-left: 120px;
     margin-top: 100px;
+    color: white;
+}
+
+p {
+    margin: 0px;
+
 }
 
 #search {
@@ -64,6 +70,42 @@ button:hover {
 button:active {
     background-color: rgba(205, 205, 205, 0.2);
 }
+
+#center {
+    margin-left: 10px;
+}
+
+#city {
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+#date {
+    font-size: 25px;
+}
+
+#degree {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    font-family: arial;
+    margin-top: -30px;
+}
+
+#weather {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#degree img {
+    margin-left: -18px;
+}
+
+#deg-sym {
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+
 
 
 @media (max-width: 650px) {
