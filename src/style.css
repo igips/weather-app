@@ -189,6 +189,50 @@ input {
     display: none;
 }
 
+#bottom {
+    margin-left: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.daily-disp {
+    display: flex;
+    flex-direction: column;
+    max-width: 100px;
+    align-items: center;
+}
+
+.wek-day-img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+#day-hour-disp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.day-hour {
+    background: none;
+    border: solid 2px white;
+    padding: 5px;
+    width: 60px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-family: 'Montserrat';
+
+}
+
+#day-hour-contrl {
+    display: flex;
+    gap: 20px;
+}
+
 
 
 @media (max-width: 650px) {

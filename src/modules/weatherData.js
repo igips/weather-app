@@ -56,6 +56,7 @@ function displayWeather(data1, data2) {
 	humi.textContent = data1.main.humidity + " %";
 	chRain.textContent = data2.hourly[0].pop + " %";
 	displayWindSeed(data1);
+	document.getElementById("bottom").style.display = "flex";
 	
 	
 }
