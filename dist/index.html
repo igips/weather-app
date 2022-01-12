@@ -13,8 +13,12 @@
 
 	<body>
 		<div id="search">
-			<button id="search-button"><i class="fas fa-search" style="height: 20px"></i></button>
-			<input id="loc-input" type="text" placeholder="Location" />
+			<div>
+				<button   id="search-button"><i class="fas fa-search" style="height: 20px"></i></button>
+				<input  id="loc-input" type="text" placeholder="Location" /><br>
+			</div>
+			<p id="not-found"></p>
+			
 		</div>
 
 		<div id="center">
@@ -28,9 +32,61 @@
 				<p id="degree">
 					<img id="weather-icon" src="" alt="" />
 					<span id="deg"></span>
-					<span id="deg-sym"></span>
+					<span id="deg-sym"><button class='degBut' id='celc'>°C</button><button class='degBut' id='fah'>°F</button></span>
 				</p>
 			</div>
+
+			<div id="extra-container">
+				<div class="extra">
+					<div class="extra-img-cont">
+						<i  style="height: 30px;" class="fas fa-thermometer-quarter"></i>
+					</div>
+					
+					<div>
+						<span>Feels like</span>
+						<span id="feels-deg" class="extra-span"></span>
+					</div>
+				</div>
+				<div class="extra">
+					<div class="extra-img-cont">
+						<img style="height: 30px;" src="img/humidity.png" alt="">
+					</div>
+					
+					<div>
+						<span>Humidity</span>
+						<span id="humi" class="extra-span"></span>
+					</div>
+				</div>
+				<div class="extra">
+					<div class="extra-img-cont">
+						<i style="height: 30px;" class="fas fa-cloud-rain"></i>
+					</div>
+					
+					<div>
+						<span>Chance of Rain</span>
+						<span id="ch-rain" class="extra-span"></span>
+					</div>
+				</div>
+				<div class="extra">
+					<div class="extra-img-cont">
+						<i style="height: 30px;" class="fas fa-wind"></i>
+					</div>
+					
+					<div>
+						<span>Wind Speed</span>
+						<span id="win-speed" class="extra-span"></span>
+					</div>
+				</div>
+				
+			</div>
 		</div>
+
+		<div>
+
+
+
+		</div>
+
+
 	</body>
 </html>

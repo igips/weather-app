@@ -8,13 +8,38 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	margin: 0px;
+	margin: 100px 120px 100px 120px;
 	display: block;
     margin-left: 120px;
     margin-top: 100px;
+    /* margin: 6rem; */
     color: white;
     font-family: "montserrat";
     font-weight: bolder;
+}
+
+#extra-container {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    width: 140px;
+    
+}
+
+.extra-img-cont {
+    width: 30px;
+}
+
+
+#center {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+#deg {
+    width: 60px;
 }
 
 
@@ -24,11 +49,21 @@ p {
 
 }
 
+#not-found {
+    color: red;
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 250px;
+}
+
 #search {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     height: 50px;
-    
+}
+
+#search div {
+    display: flex;
 }
 
 ::placeholder {
@@ -50,7 +85,7 @@ input {
     border-bottom-left-radius: 0;
 }
 
-button {
+#search-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,27 +100,70 @@ button {
     border-radius: 0.5rem;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
+    
 }
 
-button:hover {
+.degBut {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+    width: 35px;
+    cursor: pointer;
+
+}
+
+#fah {
+    border-left: 1px solid white;
+    padding-left: 5px;
+    color: gray;
+    
+}
+
+
+
+#search-button:hover {
     background-color: rgba(230, 230, 230, 0.2);
 }    
 
-button:active {
+#search-button:active {
     background-color: rgba(205, 205, 205, 0.2);
 }
 
-#center {
-    margin-left: 10px;
-}
+
 
 #city {
-    margin-top: 30px;
     font-size: 50px;
+    margin-top: -14px;
 }
 
+.extra {
+    display: flex;
+    font-size: 11px;
+    gap: 5px;
+    
+}
+
+.extra div {
+    margin-top: -2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.extra-span {
+    display: flex;
+    gap: 5px;
+    font-size: 20px;
+}
+
+.extra-span div {
+    font-size: 15px;
+    margin-top: -1px;
+}
+
+
 #date {
-    font-size: 25px;
+    font-size: 23px;
 }
 
 #degree {
@@ -108,6 +186,7 @@ button:active {
 #deg-sym {
     font-size: 20px;
     padding-bottom: 25px;
+    display: none;
 }
 
 
