@@ -4,13 +4,13 @@ html {
 }
 
 body {
+    max-height: 100vh;
 	background-image: url("img/background.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	margin: 100px 100px 100px 100px;
+	margin: 80px;
 	display: block;
-    /* margin: 6rem; */
     color: white;
     font-family: "montserrat";
     font-weight: bolder;
@@ -34,6 +34,7 @@ body {
     justify-content: space-between;
     margin-top: 30px;
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 #deg {
@@ -192,6 +193,7 @@ input {
     display: none;
     flex-direction: column;
     gap: 50px;
+    margin-right: 10px;
 }
 
 .daily-disp {
@@ -277,5 +279,15 @@ input {
 
 
 
-@media (max-width: 650px) {
-}
+@media (max-width: 900px) {
+    body {
+        margin: 10px;
+    }
+} 
+
+@media (max-width: 750px) {
+    
+} 
+
+
+
