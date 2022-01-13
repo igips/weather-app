@@ -14,6 +14,7 @@ const feelsDeg = document.getElementById("feels-deg");
 const humi = document.getElementById("humi");
 const chRain = document.getElementById("ch-rain");
 const winSpeed = document.getElementById("win-speed");
+const dayHourDiv = document.getElementById("day-hour-disp");
 
 
 function formatDate(data) {
@@ -30,6 +31,15 @@ function formatDate(data) {
 	const today = new Date();
 
 	return today.toLocaleDateString("en-GB", options);
+}
+
+function formatDateForWeekly(data, time) {
+    const options = {weekday: "long"};
+    options.timeZone = time;
+
+    const day = new Date(data.dt * 1000);
+    
+    return day.toLocaleDateString("en-GB", options);
 }
 
 export {
@@ -49,6 +59,8 @@ export {
     feelsDeg,
     humi,
     chRain,
-    winSpeed
+    winSpeed,
+    dayHourDiv,
+    formatDateForWeekly
     
 };

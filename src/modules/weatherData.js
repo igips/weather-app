@@ -1,7 +1,9 @@
+import { createContainerForWeekly } from "../domMani";
 import {
 	chRain,
 	cityDisp,
 	dateDisp,
+	dayHourDiv,
 	degDisp,
 	degreeTypeDisp,
 	feelsDeg,
@@ -55,11 +57,22 @@ function displayWeather(data1, data2) {
 	displayDegFeels(data1);
 	humi.textContent = data1.main.humidity + " %";
 	chRain.textContent = data2.hourly[0].pop + " %";
-	displayWindSeed(data1);
+	displayWindSpeed(data1);
 	document.getElementById("bottom").style.display = "flex";
-	
+	displayWeekly(data2);
 	
 }
+
+function displayWeekly(data) {
+	dayHourDiv.textContent = "";
+	const timeZone = data.timezone;
+	for(let i = 1; i < data.daily.length; i++) {
+		createContainerForWeekly(data.daily[i], timeZone);
+	}
+
+}
+
+
 
 function displayDegFeels(data) {
 	if(units.a === "metric") {
@@ -71,7 +84,8 @@ function displayDegFeels(data) {
 	
 }
 
-function displayWindSeed(data) {
+
+function displayWindSpeed(data) {
 	if(units.a === "metric") {
 		winSpeed.textContent = data.wind.speed + " km/h";
 

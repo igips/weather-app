@@ -1,4 +1,4 @@
-import {   celcButton, cityDisp, fahButton, locationInput, notFound, searchButton, units } from "./getElements";
+import {   celcButton, cityDisp,  fahButton, locationInput, notFound, searchButton, units } from "./getElements";
 import { getData, getLocationFromIp, } from "./modules/weatherData";
 import "./style.css";
 

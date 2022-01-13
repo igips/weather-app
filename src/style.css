@@ -10,8 +10,6 @@ body {
 	background-repeat: no-repeat;
 	margin: 100px 120px 100px 120px;
 	display: block;
-    margin-left: 120px;
-    margin-top: 100px;
     /* margin: 6rem; */
     color: white;
     font-family: "montserrat";
@@ -193,7 +191,7 @@ input {
     margin-left: 10px;
     display: none;
     flex-direction: column;
-    gap: 25px;
+    gap: 50px;
 }
 
 .daily-disp {
@@ -211,6 +209,7 @@ input {
 #day-hour-disp {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .day-hour {
@@ -231,6 +230,15 @@ input {
 #day-hour-contrl {
     display: flex;
     gap: 20px;
+}
+
+.night-temp-weekly {
+    color: gray;
+}
+
+.day-night-para {
+    display: flex;
+    gap: 10px;
 }
 
 
