@@ -1,7 +1,8 @@
-import { createContainerForWeekly } from "../domMani";
+import { createContainerForWeeklyHourly } from "../domMani";
 import {
 	chRain,
 	cityDisp,
+	hourlyStartEnd,
 	dateDisp,
 	dayHourDiv,
 	degDisp,
@@ -14,6 +15,7 @@ import {
 	weatherDisp,
 	weatherIcon,
 	winSpeed,
+	dailyButton,
 } from "../getElements";
 
 async function getData(location, uni) {
@@ -25,7 +27,7 @@ async function getData(location, uni) {
 		if (!response.ok) {
 			throw new Error("404");
 		}
-		
+
 		const weatherData = await response.json();
 
 		const response2 = await fetch(
@@ -59,37 +61,45 @@ function displayWeather(data1, data2) {
 	chRain.textContent = data2.hourly[0].pop + " %";
 	displayWindSpeed(data1);
 	document.getElementById("bottom").style.display = "flex";
-	displayWeekly(data2);
+	if(dailyButton.style.border !== "none") {
+		displayWeekly(data2);
+
+	} else {
+		displayHourly(data2);
+	}
+	
 	
 }
 
 function displayWeekly(data) {
 	dayHourDiv.textContent = "";
 	const timeZone = data.timezone;
-	for(let i = 1; i < data.daily.length; i++) {
-		createContainerForWeekly(data.daily[i], timeZone);
+	for (let i = 1; i < data.daily.length; i++) {
+		createContainerForWeeklyHourly(data.daily[i], timeZone);
 	}
-
 }
 
+function displayHourly(data) {
 
+	dayHourDiv.textContent = "";
+	const timeZone = data.timezone;
+	for (let i = hourlyStartEnd.start; i < hourlyStartEnd.end; i++) {
+		createContainerForWeeklyHourly(data.hourly[i], timeZone);
+	}
+}
 
 function displayDegFeels(data) {
-	if(units.a === "metric") {
+	if (units.a === "metric") {
 		feelsDeg.innerHTML = `${Math.round(data.main.feels_like)}<div id='feels-temp'>°C</div>`;
-
-	} else  {
+	} else {
 		feelsDeg.innerHTML = `${Math.round(data.main.feels_like)}<div id='feels-temp'>°F</div>`;
 	}
-	
 }
 
-
 function displayWindSpeed(data) {
-	if(units.a === "metric") {
+	if (units.a === "metric") {
 		winSpeed.textContent = data.wind.speed + " km/h";
-
-	} else  {
+	} else {
 		winSpeed.textContent = data.wind.speed + " mph";
 	}
 }
