@@ -15,6 +15,7 @@ body {
     font-weight: bolder;
     
     
+    
 }
 
 #extra-container {
@@ -196,6 +197,7 @@ input {
     gap: 50px;
     margin-right: 10px;
     
+    
 }
 
 .daily-disp {
@@ -283,11 +285,12 @@ input {
 
 
 
-@media (max-width: 750px) {
+@media (max-width: 820px) {
 
     body {
         margin: 10px;
         margin-top: 20px;
+        min-height: 100vh;
         
     }
 
@@ -300,6 +303,7 @@ input {
        margin-right: 10%;
        margin-top: 20px;
        gap: 20px;
+       min-height: calc(100vh - 270px);
        
     }
     
@@ -383,12 +387,71 @@ input {
         padding-left: 0px;
     }
 
+    #loc-input {
+        width: 312px;
+    }
+
     body {
         
         margin: 0px;
         margin-top: 20px;
     }
+
+    #not-found {
+        margin-left: 180px;
+    }
 } 
+
+@media (max-width: 340px) {
+    
+
+    #loc-input {
+        width: 220px;
+    }
+
+    #city {
+        font-size: 20px;
+    }
+
+    #date {
+        font-size: 10px;
+    }
+
+    #weather {
+        font-size: 12px;
+    }
+
+    #weather-icon {
+        max-height: 50px;
+        max-width: 50px;
+       
+    }
+
+    #degree img {
+        margin-left: -5px;
+        margin-top: 5px;
+    }
+
+    #degree {
+        font-size: 30px;
+    }
+
+    .degBut {
+        font-size: 15px;
+        width: 30px;
+    }
+
+    .extra {
+        font-size: 8px;
+    }
+
+    
+    
+
+
+} 
+
+
 
 
 
