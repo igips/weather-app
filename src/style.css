@@ -396,6 +396,14 @@ input {
     #loc-input {
         width: 280px
     }
+
+    #city {
+        font-size: 25px;
+    }
+
+    #date {
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 380px) {
