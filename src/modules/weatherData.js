@@ -69,18 +69,25 @@ function displayWeather(data1, data2) {
 }
 
 function displayWeekly(data) {
-	dayHourDiv.textContent = "";
+	// dayHourDiv.textContent = "";
+	dayHourDiv.removeChild(dayHourDiv.lastChild);
+	const containerOuter = document.createElement("div");
+	containerOuter.setAttribute("id", "day-hour-disp");
+	dayHourDiv.appendChild(containerOuter);
 	const timeZone = data.timezone;
 	for (let i = 1; i < data.daily.length; i++) {
-		createContainerForWeeklyHourly(data.daily[i], timeZone);
+		createContainerForWeeklyHourly(data.daily[i], timeZone, containerOuter);
 	}
 }
 
 function displayHourly(data) {
-	dayHourDiv.textContent = "";
+	dayHourDiv.removeChild(dayHourDiv.lastChild);
+	const containerOuter = document.createElement("div");
+	containerOuter.setAttribute("id", "day-hour-disp");
+	dayHourDiv.appendChild(containerOuter);
 	const timeZone = data.timezone;
 	for (let i = hourlyStartEnd.start; i < hourlyStartEnd.end; i++) {
-		createContainerForWeeklyHourly(data.hourly[i], timeZone);
+		createContainerForWeeklyHourly(data.hourly[i], timeZone, containerOuter);
 	}
 }
 
