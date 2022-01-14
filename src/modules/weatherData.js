@@ -52,7 +52,7 @@ function displayWeather(data1, data2) {
 	cityDisp.textContent = data1.name;
 	dateDisp.textContent = formatDate(data2);
 	weatherDisp.textContent = data1.weather[0].description;
-	weatherIcon.src = `http://openweathermap.org/img/wn/${data1.weather[0].icon}@2x.png`;
+	weatherIcon.src = `https://openweathermap.org/img/wn/${data1.weather[0].icon}@2x.png`;
 	degDisp.textContent = Math.round(data1.main.temp);
 	degreeTypeDisp.style.display = "flex";
 	document.getElementById("extra-container").style.display = "flex";
