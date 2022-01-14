@@ -13,7 +13,6 @@ body {
     color: white;
     font-family: "montserrat";
     font-weight: bolder;
-    overflow: hidden;
     
     
 }
@@ -302,10 +301,8 @@ input {
     #bottom {
        margin-left: 10%;
        margin-right: 10%;
-       
        gap: 20px;
-       min-height: 100vh;
-       
+       min-height: 60vh;
        
     }
     
