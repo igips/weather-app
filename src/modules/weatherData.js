@@ -106,7 +106,7 @@ function displayWindSpeed(data) {
 
 async function getLocationFromIp() {
 	try {
-		const response = await fetch("http://ip-api.com/json/", { mode: "cors" });
+		const response = await fetch("https://ipapi.co/json/", { mode: "cors" })
 		const location = await response.json();
 
 		getData(location.city, units);
