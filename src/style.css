@@ -445,9 +445,13 @@ input {
 }
 
 @media (max-width: 450px) {
-    /* #loc-input {
+    #loc-input {
         width: 300px
-    } */
+    }
+
+    
+
+    
 
     #city {
         font-size: 25px;
