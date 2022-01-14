@@ -296,6 +296,7 @@ input {
 
     #center {
         margin-top: 40px;
+        margin-left: 15px;
     }
     
     #bottom {
@@ -303,7 +304,7 @@ input {
        margin-right: 10%;
        margin-top: 20px;
        gap: 20px;
-       min-height: calc(100vh - 270px);
+       min-height: calc(100vh - 240px);
        
     }
     
@@ -389,7 +390,7 @@ input {
 
 @media (max-width: 450px) {
     #loc-input {
-        width: 315px
+        width: 280px
     }
 }
 
@@ -399,12 +400,12 @@ input {
     }
 
     #loc-input {
-        width: 312px;
+        width: 280px;
     }
 
     body {
         
-        margin: 0px;
+        
         margin-top: 20px;
     }
 
