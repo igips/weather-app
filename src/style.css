@@ -378,6 +378,12 @@ input {
         font-size: 14px;
     }
 
+    #deg {
+        width: 31px;
+    }
+
+
+
 
 } 
 
@@ -387,9 +393,11 @@ input {
         align-items: center;
     }
 
-    #deg {
-        width: 31px;
+    #celc {
+        padding-left: 0px;
     }
+
+   
 }
 
 @media (max-width: 450px) {
@@ -403,6 +411,15 @@ input {
 
     #date {
         font-size: 13px;
+    }
+
+    #degree {
+        font-size: 40px;
+    }
+
+    #weather {
+        font-size: 15px;
+       
     }
 }
 
