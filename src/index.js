@@ -5,6 +5,7 @@ import "./style.css";
 getLocationFromIp();
 
 searchButton.addEventListener("click", () => {
+    event.preventDefault();
     notFound.textContent = "";
     if(locationInput.value !== "") {
         getData(locationInput.value, units);

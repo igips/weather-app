@@ -63,7 +63,7 @@ p {
     height: 50px;
 }
 
-#search div {
+#search div form {
     display: flex;
 }
 
@@ -397,6 +397,11 @@ input {
         padding-left: 0px;
     }
 
+    #weather-icon {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
    
 }
 
@@ -414,11 +419,11 @@ input {
     }
 
     #degree {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     #weather {
-        font-size: 15px;
+        font-size: 13px;
        
     }
 }
