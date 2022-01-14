@@ -386,6 +386,10 @@ input {
     #search {
         align-items: center;
     }
+
+    #deg {
+        width: 31px;
+    }
 }
 
 @media (max-width: 450px) {
