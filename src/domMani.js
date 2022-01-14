@@ -5,6 +5,7 @@ function createContainerForWeeklyHourly(data, time) {
 	container.setAttribute("class", "daily-disp");
 
 	const day = document.createElement("p");
+	day.setAttribute("class", "hour-day-para")
 	if (data.moonrise !== undefined) {
 		day.textContent = formatDateForWeekly(data, time);
 	} else {
@@ -29,6 +30,7 @@ function createContainerForWeeklyHourly(data, time) {
 		temp.appendChild(nightTemp);
 	} else {
 		dayTemp.textContent = Math.round(data.temp) + "°";
+		temp.setAttribute("class", "hourly-deg-disp");
 		temp.appendChild(dayTemp);
 	}
 
