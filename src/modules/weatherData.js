@@ -1,4 +1,4 @@
-import { createContainerForWeeklyHourly } from "./modules/domMani";
+import { createContainerForWeeklyHourly } from "./domMani";
 import {
 	chRain,
 	cityDisp,
@@ -16,7 +16,7 @@ import {
 	weatherIcon,
 	winSpeed,
 	dailyButton,
-} from "../getElements";
+} from "./getElements";
 
 async function getData(location, uni) {
 	try {
@@ -61,14 +61,11 @@ function displayWeather(data1, data2) {
 	chRain.textContent = data2.hourly[0].pop + " %";
 	displayWindSpeed(data1);
 	document.getElementById("bottom").style.display = "flex";
-	if(dailyButton.style.border !== "none") {
+	if (dailyButton.style.border !== "none") {
 		displayWeekly(data2);
-
 	} else {
 		displayHourly(data2);
 	}
-	
-	
 }
 
 function displayWeekly(data) {
@@ -80,7 +77,6 @@ function displayWeekly(data) {
 }
 
 function displayHourly(data) {
-
 	dayHourDiv.textContent = "";
 	const timeZone = data.timezone;
 	for (let i = hourlyStartEnd.start; i < hourlyStartEnd.end; i++) {
@@ -106,7 +102,7 @@ function displayWindSpeed(data) {
 
 async function getLocationFromIp() {
 	try {
-		const response = await fetch("https://ipapi.co/json/", { mode: "cors" })
+		const response = await fetch("https://ipapi.co/json/", { mode: "cors" });
 		const location = await response.json();
 
 		getData(location.city, units);
