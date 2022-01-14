@@ -1,4 +1,4 @@
-import { createContainerForWeeklyHourly } from "../domMani";
+import { createContainerForWeeklyHourly } from "./modules/domMani";
 import {
 	chRain,
 	cityDisp,

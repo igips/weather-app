@@ -1,4 +1,4 @@
-import {   celcButton, cityDisp,  dailyButton,  dot1,  dot2,  dot3,  fahButton, hourlyButton, hourlyStartEnd, leftArrow, locationInput, notFound, rightArrow, searchButton, sliderDiv, units } from "./getElements";
+import {   celcButton, cityDisp,  dailyButton,  dot1,  dot2,  dot3,  fahButton, hourlyButton, hourlyStartEnd, leftArrow, locationInput, notFound, rightArrow, searchButton, sliderDiv, units } from "./modules/getElements";
 import { getData, getLocationFromIp, } from "./modules/weatherData";
 import "./style.css";
 
