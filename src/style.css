@@ -304,7 +304,7 @@ input {
         /* margin: 10px;
         margin-top: 20px; */
         padding: 10px;
-        padding-top: 20px;
+        padding-top: 15px;
         min-height: 100vh;
         
     }
@@ -318,8 +318,8 @@ input {
        margin-left: 10%;
        margin-right: 10%;
        gap: 20px;
-       min-height: 60vh;
-       overflow: hidden;
+       /* min-height: 60vh; */
+       /* overflow: hidden; */
        
     }
     
