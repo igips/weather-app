@@ -2,6 +2,8 @@
     margin: 0px;
 }
 
+
+
 html {
 	height: 100%;
 	position: relative;
@@ -16,12 +18,12 @@ html {
 
 
 body {
-    background: url("img/background.jpg") no-repeat center top fixed;
-	/* background-image: url("img/background.jpg"); */
-	/* background-size: cover;
+    /* background: url("img/background.jpg") no-repeat center top fixed; */
+	background-image: url("img/background.jpg"); 
+	background-size: cover;
 	background-position: center;
-	background-repeat: no-repeat; */
-	/* margin: 80px; */
+	background-repeat: no-repeat; 
+	/* margin: 80px;  */
     padding: 80px;
     color: white;
     font-family: "montserrat";
@@ -337,6 +339,7 @@ input {
        /* height: calc(100vh - 250px);  */
        /* overflow: hidden; */
        min-height: 100%;
+       padding-bottom: 20px;
        
     }
     
