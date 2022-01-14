@@ -1,18 +1,32 @@
+* {
+    margin: 0px;
+}
+
 html {
 	min-height: 100%;
 	position: relative;
+    box-sizing: border-box;
+    
 }
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
 
 body {
 	background-image: url("img/background.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	margin: 80px;
+	/* margin: 80px; */
+    padding: 80px;
 	display: block;
     color: white;
     font-family: "montserrat";
     font-weight: bolder;
+    
     
     
 }
@@ -287,8 +301,10 @@ input {
 @media (max-width: 820px) {
 
     body {
-        margin: 10px;
-        margin-top: 20px;
+        /* margin: 10px;
+        margin-top: 20px; */
+        padding: 10px;
+        padding-top: 20px;
         min-height: 100vh;
         
     }
@@ -405,9 +421,9 @@ input {
 }
 
 @media (max-width: 450px) {
-    #loc-input {
-        width: 280px
-    }
+    /* #loc-input {
+        width: 300px
+    } */
 
     #city {
         font-size: 25px;
