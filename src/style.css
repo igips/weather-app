@@ -303,6 +303,7 @@ input {
        margin-right: 10%;
        gap: 20px;
        min-height: 60vh;
+       overflow: hidden;
        
     }
     
