@@ -18,12 +18,7 @@ html {
 
 
 body {
-    /* background: url("img/background.jpg") no-repeat center top fixed; */
-	background-image: url("img/background.jpg"); 
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat; 
-	/* margin: 80px;  */
+    background: url("img/background.jpg") no-repeat center top fixed;
     padding: 80px;
     color: white;
     font-family: "montserrat";
