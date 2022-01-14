@@ -4,7 +4,10 @@
 		<meta charset="UTF-8" />
 		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-
+		<script>
+			let viewport = document.querySelector("meta[name=viewport]");
+			viewport.setAttribute("content", viewport.content + ", height=" + window.innerHeight);
+		</script>
 		<title>Weather</title>
 		<link rel="shortcut icon" type="image/x-icon" href="fav.png" />
 		<script src="bundle.js" defer></script>
